@@ -1,10 +1,4 @@
-function component() {
-  const element = document.createElement("div");
+import headerContent from "./header.js";
 
-  // Example from Odin Project
-  element.textContent = "Diego";
-
-  return element;
-}
-
-document.body.appendChild(component());
+const content = document.getElementById("content");
+content.appendChild(headerContent());
