@@ -2,6 +2,10 @@
   font-family: sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: url(./pizza-bg.jpg);
   background-size: cover;
@@ -44,7 +48,29 @@ header button {
 }
 
 header button.active {
-  border-bottom: 2px solid red;
+  box-shadow: 0px -2px 0px 0px rgba(255, 0, 0, 1) inset;
+}
+
+section {
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  color: black;
+  padding: 64px;
+  width: 1200px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.5;
 }
 
 footer {

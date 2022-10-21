@@ -20,10 +20,19 @@ function changeContent(e) {
 
   if (buttonId === "home-button") {
     content.appendChild(homeContent());
+    homeButton.classList.add("active");
+    menuButton.classList.remove("active");
+    aboutButton.classList.remove("active");
   } else if (buttonId === "menu-button") {
     content.appendChild(menuContent());
+    homeButton.classList.remove("active");
+    menuButton.classList.add("active");
+    aboutButton.classList.remove("active");
   } else if (buttonId === "about-button") {
     content.appendChild(aboutContent());
+    homeButton.classList.remove("active");
+    menuButton.classList.remove("active");
+    aboutButton.classList.add("active");
   }
 }
 
@@ -37,3 +46,5 @@ const aboutButton = document.querySelector("#about-button");
 homeButton.addEventListener("click", changeContent);
 menuButton.addEventListener("click", changeContent);
 aboutButton.addEventListener("click", changeContent);
+
+homeButton.classList.add("active");
