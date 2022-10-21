@@ -8,15 +8,18 @@ export default function headerContent() {
 
   const homeButton = document.createElement("button");
   homeButton.textContent = "Home";
-  homeButton.classList.add("nav-button", "home-button");
+  homeButton.classList.add("nav-button");
+  homeButton.id = "home-button";
 
   const menuButton = document.createElement("button");
   menuButton.textContent = "Cardápio";
-  menuButton.classList.add("nav-button", "menu-button");
+  menuButton.classList.add("nav-button");
+  menuButton.id = "menu-button";
 
   const aboutButton = document.createElement("button");
   aboutButton.textContent = "Sobre nós";
-  aboutButton.classList.add("nav-button", "about-button");
+  aboutButton.classList.add("nav-button");
+  aboutButton.id = "about-button";
 
   nav.appendChild(homeButton);
   nav.appendChild(menuButton);
