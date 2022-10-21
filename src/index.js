@@ -2,12 +2,16 @@ import headerContent from "./header.js";
 import homeContent from "./home.js";
 import menuContent from "./menu.js";
 import aboutContent from "./about.js";
+import footerContent from "./footer.js";
 
 import "./reset.css";
 import "./style.css";
 
 const header = document.querySelector("#header");
 header.appendChild(headerContent());
+
+const footer = document.querySelector("#footer");
+footer.appendChild(footerContent());
 
 function changeContent(e) {
   content.innerHTML = "";
@@ -24,6 +28,7 @@ function changeContent(e) {
 }
 
 const content = document.querySelector("#content");
+content.appendChild(homeContent());
 
 const homeButton = document.querySelector("#home-button");
 const menuButton = document.querySelector("#menu-button");
