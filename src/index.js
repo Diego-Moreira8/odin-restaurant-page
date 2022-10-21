@@ -3,6 +3,9 @@ import homeContent from "./home.js";
 import menuContent from "./menu.js";
 import aboutContent from "./about.js";
 
+import "./reset.css";
+import "./style.css";
+
 const header = document.querySelector("#header");
 header.appendChild(headerContent());
 

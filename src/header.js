@@ -1,7 +1,7 @@
 export default function headerContent() {
   const header = document.createElement("header");
 
-  const brandDiv = document.createElement("div");
+  const brandDiv = document.createElement("h1");
   brandDiv.textContent = "Pizzaria Nostra Casa";
 
   const nav = document.createElement("nav");

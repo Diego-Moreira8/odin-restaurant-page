@@ -1,0 +1,44 @@
+:root {
+  font-family: sans-serif;
+}
+
+body {
+  background: url(./pizza-bg.jpg);
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  color: black;
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: green;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+}
+
+header button {
+  border: none;
+  font-size: 1.25rem;
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header button.active {
+  border-bottom: 2px solid red;
+}
