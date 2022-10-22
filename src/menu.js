@@ -4,16 +4,46 @@ export default function menuContent() {
   const title = document.createElement("h2");
   title.textContent = "Cardápio";
 
-  const text = document.createElement("p");
-  text.textContent = `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
-    repellat vero eveniet reiciendis a eos nostrum harum consequatur, enim
-    blanditiis quos quisquam nisi ipsa corporis molestiae animi cumque
-    impedit illo quaerat vitae labore nihil! Tenetur accusamus amet dolores
-    sequi illum repellendus, at deserunt placeat fuga mollitia, velit esse
-    minus eos!`;
+  class MenuItem {
+    constructor(title, ingredientsArray, price) {
+      this.title = title;
+      this.ingredientsArray = ingredientsArray;
+      this.price = price;
+    }
+  }
 
-  section.appendChild(title);
-  section.appendChild(text);
+  const pizza1 = new MenuItem(
+    "À Moda",
+    ["molho da casa", "queijo", "frango", "calabresa", "bacon"],
+    65
+  );
+
+  const pizza2 = new MenuItem(
+    "À Moda",
+    ["molho da casa", "queijo", "frango", "calabresa", "bacon"],
+    65
+  );
+
+  const pizza3 = new MenuItem(
+    "À Moda",
+    ["molho da casa", "queijo", "frango", "calabresa", "bacon"],
+    65
+  );
+
+  const pizza4 = new MenuItem(
+    "À Moda",
+    ["molho da casa", "queijo", "frango", "calabresa", "bacon"],
+    65
+  );
+
+  const itemsArray = [pizza1, pizza2, pizza3, pizza4];
+
+  const itemDiv = document.createElement("div");
+  const titleDiv = document.createElement("div");
+  const priceDiv = document.createElement("div");
+  const ingredientsDiv = document.createElement("div");
+
+  // tentar append num for
 
   return section;
 }

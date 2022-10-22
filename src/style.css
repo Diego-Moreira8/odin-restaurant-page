@@ -59,6 +59,7 @@ section {
   color: black;
   padding: 64px;
   width: 1200px;
+  max-width: 90vw;
 }
 
 h2 {
