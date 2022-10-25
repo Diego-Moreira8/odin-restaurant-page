@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Lobster";
+  src: url(./fonts/Lobster-Regular.ttf);
+}
+
 :root {
   font-family: sans-serif;
 }
@@ -7,6 +12,7 @@
 }
 
 body {
+  overflow-y: scroll;
   background: url(./pizza-bg.jpg);
   background-size: cover;
   display: flex;
@@ -31,6 +37,7 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: green;
+  font-family: "Lobster";
 }
 
 nav {
@@ -40,6 +47,7 @@ nav {
 
 header button {
   border: none;
+  padding: 4px 16px;
   font-size: 1.25rem;
   background-color: transparent;
   color: black;
@@ -52,7 +60,7 @@ header button.active {
 }
 
 section {
-  margin: auto;
+  margin: 32px auto;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(4px);
   border-radius: 12px;
@@ -72,6 +80,36 @@ h2 {
 p {
   font-size: 1.125rem;
   line-height: 1.5;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 24px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.item-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.item-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: right;
+}
+.item-ingredient {
+  color: gray;
+  grid-column: 1 / -1;
 }
 
 footer {
