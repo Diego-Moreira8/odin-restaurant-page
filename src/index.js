@@ -29,6 +29,10 @@ const switchPages = (page) => {
 
   content.innerHTML = "";
   content.appendChild(pageFunction());
+
+  document
+    .querySelectorAll("nav button")
+    .forEach((b) => b.classList[b.id === page ? "add" : "remove"]("active"));
 };
 
 window.onload = switchPages("home");

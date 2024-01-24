@@ -41,9 +41,17 @@ body {
       nav {
         ul {
           display: flex;
+          gap: 4px;
 
           li {
             list-style-type: none;
+
+            button {
+              &.active {
+                background-color: red;
+                color: white;
+              }
+            }
           }
         }
       }
