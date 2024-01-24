@@ -4,6 +4,7 @@
 }
 
 button {
+  font-family: inherit;
   font-size: 1rem;
   font-weight: bold;
   padding: 0.25rem 0.75rem;
@@ -19,7 +20,7 @@ button {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Century Gothic", sans-serif;
   min-height: 100dvh;
   display: flex;
   flex-flow: column;
@@ -34,7 +35,7 @@ body {
       padding: 0.5rem 1rem;
 
       .brand {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: bold;
       }
 
@@ -58,9 +59,18 @@ body {
     }
 
     #content {
-      h1 {
-        text-align: center;
-        margin: 1rem;
+      padding: 2rem;
+
+      main {
+        h1 {
+          text-align: center;
+          margin: 1rem;
+        }
+
+        p {
+          line-height: 1.5;
+          text-align: justify;
+        }
       }
     }
   }
@@ -68,5 +78,10 @@ body {
   footer {
     text-align: center;
     padding: 0.5rem 1rem;
+
+    a {
+      font-weight: bold;
+      color: red;
+    }
   }
 }
