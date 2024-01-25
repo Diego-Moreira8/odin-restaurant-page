@@ -35,7 +35,7 @@ const switchPages = (page) => {
     .forEach((b) => b.classList[b.id === page ? "add" : "remove"]("active"));
 };
 
-window.onload = switchPages("about");
+window.onload = switchPages("home");
 navButtons.forEach((btn) =>
   btn.addEventListener("click", (e) => switchPages(e.target.id))
 );
