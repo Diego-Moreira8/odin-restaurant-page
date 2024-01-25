@@ -3,6 +3,16 @@
   padding: 0;
 }
 
+h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
 button {
   font-family: inherit;
   font-size: 1rem;
@@ -17,6 +27,10 @@ button {
   &:focus {
     background-color: #00000018;
   }
+}
+
+li {
+  list-style-type: none;
 }
 
 body {
@@ -45,8 +59,6 @@ body {
           gap: 4px;
 
           li {
-            list-style-type: none;
-
             button {
               &.active {
                 background-color: red;
@@ -61,15 +73,31 @@ body {
     #content {
       padding: 2rem;
 
-      main {
-        h1 {
-          text-align: center;
-          margin: 1rem;
-        }
+      #menu-content {
+        ul {
+          li {
+            margin-bottom: 2rem;
 
-        p {
-          line-height: 1.5;
-          text-align: justify;
+            .wrap {
+              display: grid;
+              grid-template-columns: auto 1fr auto;
+              gap: 0.25rem;
+
+              .name,
+              .price {
+                font-weight: bold;
+              }
+
+              .dots {
+                border-bottom: 2px dotted black;
+                height: 0.9rem;
+              }
+            }
+
+            .description {
+              font-style: italic;
+            }
+          }
         }
       }
     }
