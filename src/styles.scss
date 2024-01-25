@@ -141,7 +141,17 @@ body {
           margin: 1rem auto;
 
           iframe {
-            border-radius: 1rem;
+            border-radius: 0.5rem;
+            width: 300px;
+            height: 400px;
+
+            @media (min-width: 700px) {
+              width: 500px;
+            }
+
+            @media (min-width: 900px) {
+              width: 700px;
+            }
           }
         }
       }
