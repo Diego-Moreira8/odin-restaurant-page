@@ -1,4 +1,4 @@
-import PageTitle from "../components/PageTitle";
+import Heading from "../components/Heading";
 
 const Home = () => {
   const main = document.createElement("main");
@@ -21,7 +21,7 @@ const Home = () => {
     praesentium voluptates?
   `;
 
-  main.appendChild(PageTitle("Bem-vindo!"));
+  main.appendChild(Heading(1, "Bem-vindo!"));
   main.appendChild(p);
 
   return main;

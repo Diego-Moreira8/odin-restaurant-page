@@ -3,7 +3,16 @@
   padding: 0;
 }
 
-h1 {
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 48;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-align: center;
   margin: 1rem;
 }
@@ -11,6 +20,7 @@ h1 {
 p {
   line-height: 1.5;
   text-align: justify;
+  margin-bottom: 0.5rem;
 }
 
 button {
@@ -97,6 +107,28 @@ body {
             .description {
               font-style: italic;
             }
+          }
+        }
+      }
+
+      #about-content {
+        .call-us {
+          text-align: center;
+        }
+
+        .wrap {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+        }
+
+        .map {
+          width: fit-content;
+          margin: 1rem auto;
+
+          iframe {
+            border-radius: 1rem;
           }
         }
       }

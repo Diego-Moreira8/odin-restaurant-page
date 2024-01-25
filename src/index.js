@@ -1,6 +1,6 @@
-import Home from "./pages/home.js";
-import Menu from "./pages/menu.js";
-import About from "./pages/about.js";
+import Home from "./pages/Home.js";
+import Menu from "./pages/Menu.js";
+import About from "./pages/About.js";
 import "./styles.scss";
 
 const homeBtn = document.querySelector("#home");
@@ -35,7 +35,7 @@ const switchPages = (page) => {
     .forEach((b) => b.classList[b.id === page ? "add" : "remove"]("active"));
 };
 
-window.onload = switchPages("home");
+window.onload = switchPages("about");
 navButtons.forEach((btn) =>
   btn.addEventListener("click", (e) => switchPages(e.target.id))
 );

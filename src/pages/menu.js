@@ -1,4 +1,4 @@
-import PageTitle from "../components/PageTitle";
+import Heading from "../components/Heading";
 
 const Menu = () => {
   const main = document.createElement("main");
@@ -41,7 +41,7 @@ const Menu = () => {
   }
 
   main.id = "menu-content";
-  main.appendChild(PageTitle("Cardápio"));
+  main.appendChild(Heading(1, "Bem-vindo!"));
   main.appendChild(menuList);
 
   return main;
