@@ -41,7 +41,7 @@ const Menu = () => {
   }
 
   main.id = "menu-content";
-  main.appendChild(Heading(1, "Bem-vindo!"));
+  main.appendChild(Heading(1, "Cardápio"));
   main.appendChild(menuList);
 
   return main;
